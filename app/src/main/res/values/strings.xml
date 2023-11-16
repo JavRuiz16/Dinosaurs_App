@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dinosaurs_App</string>
+    <string name="Tyrannosaurus_rex">"length": "40 feet long".</string>
+    <string name="Brontosaurus">"length": "66.5 feet long".</string>
+    <string name="Stegosaurus">"length": "30 feet long".</string>
+    <string name="Triceratops"> "length": "30 feet long".</string>
+    <string name="Velociraptor"> "length": "6 feet long".</string>
+    <string name="Pterodactyl"> "length": "36 feet wingspan".</string>
+</resources>
