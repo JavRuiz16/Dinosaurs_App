@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Dinosaurs_App</string>
     <string name="Tyrannosaurus_rex">"length": "40 feet long".</string>
+    <string name="description1">"The Tyrannosaurus rex, often abbreviated as T. rex, was a fearsome carnivorous dinosaur that lived during the Late Cretaceous period, about 68 to 66 million years ago. It was one of the largest land predators with massive jaws filled with sharp teeth and tiny, non-functional arms."</string>
     <string name="Brontosaurus">"length": "66.5 feet long".</string>
+    <string name="description2">"The Brontosaurus was a massive, herbivorous dinosaur that lived during the Late Jurassic period, about 150 million years ago. It had a long neck and tail, a large body, and walked on four sturdy legs. Despite its impressive size, it was a peaceful, plant-eating dinosaur that likely fed on vegetation in ancient forests."</string>
     <string name="Stegosaurus">"length": "30 feet long".</string>
+    <string name="description3">"The Stegosaurus was a herbivorous dinosaur that lived during the Late Jurassic period, approximately 155 to 150 million years ago. It was known for its distinctive double row of large bony plates along its back and the spiked tail, or \"thagomizer,\" which it likely used for defense against predators."</string>
     <string name="Triceratops"> "length": "30 feet long".</string>
+    <string name="description4">"Triceratops was one of the last non-flying dinosaurs to have evolved, being part of the Late Cretaceous Period (145.5 million to 65 million years ago). Triceratops was walking the earth when the dinosaurs were wiped out."</string>
     <string name="Velociraptor"> "length": "6 feet long".</string>
+    <string name="description5">"Velociraptor was a small, agile carnivorous dinosaur from the Cretaceous period. It had a sleek body, sharp claws, and a keen sense of hunting. It is famous for its role in the movie \"Jurassic Park,\" although it was much smaller in reality, about the size of a turkey."</string>
     <string name="Pterodactyl"> "length": "36 feet wingspan".</string>
+    <string name="description6">The Pterodactyl, or more accurately, the Pterosaur, was not a dinosaur but a flying reptile from the time of dinosaurs. It had a wingspan of various sizes, some as large as a small airplane, and it soared through prehistoric skies hunting for fish and other prey with its sharp beak."</string>
 </resources>
