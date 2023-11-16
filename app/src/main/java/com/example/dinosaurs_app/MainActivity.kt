@@ -38,26 +38,18 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    DinosaursAppContent()
+                    Dinosaurs_App()
                 }
             }
         }
     }
 }
-
+@Preview
 @Composable
-fun DinosaursAppContent() {
-    Dinosaurs_App(name = "T-Rex")
+fun Dinosaurs_App() {
+    Dinosaurs_AppList(DataSource.dinosaursApp)
 }
 
-@Composable
-fun Dinosaurs_App(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-    Dinosaurs_AppCard(dinosaursApp = DataSource.dinosaursApp[0])
-}
 @Composable
 fun Dinosaurs_AppList(dinosaursAppList: List<Dinosaurs_App>, modifier: Modifier = Modifier) {
     LazyColumn(modifier = modifier) {
@@ -77,10 +69,10 @@ fun Dinosaurs_AppCard(dinosaursApp: Dinosaurs_App, modifier: Modifier = Modifier
             Image(
                 painter = painterResource(id = dinosaursApp.imageResourceId),
                 contentDescription = stringResource(id = dinosaursApp.stringResourceId),
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .height(194.dp)
-                            .background(androidx.compose.ui.graphics.Color.Black),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(194.dp)
+                    .background(androidx.compose.ui.graphics.Color.Black),
             )
             Text(
                 text = stringResource(id = dinosaursApp.stringResourceId),
@@ -92,19 +84,21 @@ fun Dinosaurs_AppCard(dinosaursApp: Dinosaurs_App, modifier: Modifier = Modifier
     }
 }
 
+@Composable
+fun Dinosaurs_App(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+    Dinosaurs_AppCard(dinosaursApp = DataSource.dinosaursApp[0])
+}
+
+
+
 @Preview
 @Composable
 fun Dinosaurs_AppCardPreview() {
     Dinosaurs_AppTheme {
         Dinosaurs_AppCard(dinosaursApp = DataSource.dinosaursApp[0])
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun Dinosaurs_App() {
-    Dinosaurs_AppList(DataSource.dinosaursApp )
-    Dinosaurs_AppTheme {
-        Dinosaurs_App(name = "T-Rex")
     }
 }

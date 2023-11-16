@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.dinosaurs_app"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.dinosaurs_app"
