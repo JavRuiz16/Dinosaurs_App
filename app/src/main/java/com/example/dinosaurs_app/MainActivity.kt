@@ -72,7 +72,7 @@ fun Dinosaurs_AppCard(dinosaursApp: Dinosaurs_App, modifier: Modifier = Modifier
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(194.dp)
-                    .background(Color.Black),
+                    .background(Color.),
             )
             Text(
                 text = stringResource(id = dinosaursApp.description),
