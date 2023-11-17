@@ -68,32 +68,20 @@ fun Dinosaurs_AppCard(dinosaursApp: Dinosaurs_App, modifier: Modifier = Modifier
         Column {
             Image(
                 painter = painterResource(id = dinosaursApp.imageResourceId),
-                contentDescription = stringResource(id = dinosaursApp.stringResourceId),
+                contentDescription = stringResource(id = dinosaursApp.name), // Assuming name holds the content description
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(194.dp)
-                    .background(androidx.compose.ui.graphics.Color.Black),
+                    .background(Color.Black),
             )
             Text(
-                text = stringResource(id = dinosaursApp.stringResourceId),
+                text = stringResource(id = dinosaursApp.description),
                 modifier = Modifier.padding(16.dp),
-                style = MaterialTheme.typography.headlineSmall
+                style = MaterialTheme.typography.headlineSmall // Adjusted the style to headline
             )
-
         }
     }
 }
-
-@Composable
-fun Dinosaurs_App(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-    Dinosaurs_AppCard(dinosaursApp = DataSource.dinosaursApp[0])
-}
-
-
 
 @Preview
 @Composable
